@@ -1,0 +1,41 @@
+.introduction{
+    color: blueviolet;
+background-color: rgb(239, 233, 241);
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: red;
+  text-transform: uppercase;
+}
+a[href ^="tel"]{
+  color: rgb(132, 102, 66);
+}
+.interest{
+   font-size: 1em;
+    width: 300px;         
+    height: 150px;        
+    background-color: #b9b1b1;  
+ 
+}
+
+a[href $=".pdf"]{
+background-color: rgb(167, 167, 148);
+}
+
+h3 + p {
+  color: rgb(255, 0, 179);
+  font-weight: bold;
+}
+div[img~="PAK AIRFORCE"]{
+  width: 60px;
+  max-height: 54px;
+  background-color: rgb(79, 118, 118);
+
+}
+
+#expertise{
+    font-size: 1em;
+    color: rgb(191, 255, 127);
+    background-color: #2b4479;
+}
