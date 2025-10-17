@@ -1,0 +1,127 @@
+.introduction{
+    color: blueviolet;
+background-color: rgb(239, 233, 241);
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: red;
+  text-transform: uppercase;
+}
+a[href ^="tel"]{
+  color: rgb(132, 102, 66);
+}
+.interest{
+   font-size: 1em;
+    width: 300px;         
+    height: 150px;        
+    background-color: #b9b1b1;  
+ 
+}
+
+a[href $=".pdf"]{
+background-color: rgb(167, 167, 148);
+}
+
+h3 + p {
+  color: rgb(255, 0, 179);
+  font-weight: bold;
+}
+div[img~="PAK AIRFORCE"]{
+  width: 60px;
+  max-height: 54px;
+  background-color: rgb(79, 118, 118);
+
+}
+
+#expertise{
+    font-size: 1em;
+    color: rgb(191, 255, 127);
+    background-color: #2b4479;
+}
+.navbar{
+    color: #49020e;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9b95f0;
+}
+.nav{
+    background-color: #49020e;
+    color: grey;
+    padding-top: 0cap;
+    border-style: outset;
+}
+#menue{
+    color:#894caf;
+    background-image: -moz-linear-gradient();
+    padding: 0.5em;
+    scroll-margin-right:calc();
+    border-color:#fe3b79;
+    border-radius: 0cap;
+    border-style: dotted;
+}
+table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+table.data-table th, table.data-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table.data-table th {
+    background-color: #9b95f0;
+    font-weight: bold;
+}
+
+table.data-table tr:hover {
+    background-color:grey;
+    
+}
+.msg{
+    background-color: grey;
+}
+.checkbox{
+    background-color:grey; ;
+}
+
+table.data-table tbody tr:nth-child(even) {
+    background-color: #ca5c6f;
+}
+
+form.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #fe3b79;
+    background-color: #aaebc0;
+    border-radius: 8px;
+}
+form.contact-form input[type="submit"] {
+    background-color: #f8fdf8;
+    color: rgb(173, 64, 64);
+    border: none;
+    cursor: pointer;
+}
+form.contact-form input[type="submit"]:hover {
+    background-color: #b8f3ba;
+}
+@media (max-width: 600px) {
+    table.data-table {
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+    }
+    
+    form.contact-form {
+        padding: 10px;
+    }
+}
+
+
+a, button, input:focus {
+    outline: 2px solid #5cacd8;
+}
