@@ -70,6 +70,7 @@ div[img~="PAK AIRFORCE"] {
 
 .navbar li:hover {
     color: #222;
+    transform: translateY(-3px);
 }
 
 
@@ -94,9 +95,30 @@ div[img~="PAK AIRFORCE"] {
 
 .a-skills {
     background-color: #9b95f0;
-    color: #ddd;
+    color: white;
     min-width: 15%;
     min-height: 10%;
+}
+
+.F-skills {
+    background-color:#9b95f0  ;
+    color: #f5f5f5;             
+    min-width: 15%;
+    min-height: 10%;     
+    padding: 10px 20px;
+    box-shadow: lightgray;
+    display: inline-block;
+}
+
+.F-skills:hover {
+    background-color: #4a86c5;  
+    transform: translateY(-3px);
+}
+
+
+
+.F-skills li:hover {
+transform: translateY(-3px);
 }
 
 #skills li:hover {
