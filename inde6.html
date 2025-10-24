@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini website</title>
+        <link rel="stylesheet" href="style6.css">
+    </head>
+    <body>
+        <div id="navbar-container">
+            <ul class="navbar">
+                <li>Home</li>
+                <li>About</li>
+                <li>Status</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="introduction">
+
+            <h1>My short introduction</h1>
+            <p>Its my simple webiste using the basic tags of html </p>
+            <!-- <img src="photo.jpg" width="200px" height="300px" alt="picture"> -->
+            <a
+                href="https://molaw.gov.pk/SiteImage/Downloads/PAK%20Army%20(Amendment)%20Act,%202023.pdf">army
+                document as pdf</a>
+            <h2>my interest base domains</h2>
+            <ol class="interest">
+                <li>websites frontend development</li>
+                <li>gaming development</li>
+                <li>websites base domain</li>
+                <ul id="expertise">
+                    <li>html</li>
+                    <li>css</li>
+                    <li> interective within a javaScripting</li>
+                </ul>
+                <li>dataAnalyst</li>
+            </ol>
+        </div>
+        <section class="card-container">
+
+            <div class="card">
+                <h3>MasterMind gaming skills</h3>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4iFgvj7ED13R1wsgD1h7BQ7hpyHg8lzpeZg&s"
+                    alt="gaming skills">
+                <h4>Description:</h4>
+                <p>I explore Unity and small browser-based games for fun.
+                    Building creative gameplay mechanics sharpens my logic.</p>
+                <ul id="skills">
+                    <li>Grand theft</li>
+                    <li>Red Dead</li>
+                    <li>Fortnite</li>
+
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Data-Analyst skills</h3>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkB8OX5223zrOWMrkmRcb-fdtByipEYWkLA&s"
+                    alt="Data-anaylst-skills" DataAnalyst_skills>
+                <p>I love analyzing data using Python and spreadsheets to find
+                    meaningful patterns and present insights effectively.</p>
+                <h4>Description:</h4>
+                <ul class="a-skills">
+                    <li>OperationAndData_analyst</li>
+                    <li>Financial Analyst</li>
+                    <li>Data-Scientist</li>
+                </div>
+                <div class="card">
+                    <h3>Frontend Developer</h3>
+                    <p>I design user-friendly websites using HTML, CSS, and
+                        JavaScript. I focus on responsive layouts and
+                        performance optimization.</p>
+                </div>
+            </div>
+        </section>
+        <h3>About references</h3>
+        <p>About myself</p>
+        I am just using the html tags to enhance my website creating skills it
+        sour course WAD in which we learn about world wide web also the https
+        and url's to visualize our frontend skills
+    </p>
+    <div>
+        <section>
+            <table class="data-table">
+                <caption>Diet plan</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Fruit Name</th>
+                        <th scope="col">Calories per 100g</th>
+                        <th scope="col">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>pineapple</td>
+                        <td>65</td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                        <td>52</td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>89</td>
+                        <td>Fruit</td>
+                    </tr>
+                    <tr>
+                        <td>Orange</td>
+                        <td>47</td>
+                        <td>Fruit</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="navbar" colspan="3"
+                            style="text-align: center;">Data sourced from
+                            nutritional databases.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <section id="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">Contacting Me</h2>
+                <p>How you contact me <a href="tel:+92563428818">telephone
+                        link</a></p>
+                <p>Mail me using this reference <a
+                        href="mailto:humai@gamil.com">humaira's here</a></p>
+
+                <form action="/submit" method="post" class="contact-form"
+                    aria-labelledby="form-title">
+                    <h3 id="form-title">Contact Form</h3>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName"
+                            placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Enter your email" required>
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Gender:</legend>
+                        <input type="radio" id="male" name="gender" value="male"
+                            required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender"
+                            value="female">
+                        <label for="female">Female</label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend class="checkbox">Interests:</legend>
+                        <input type="checkbox" id="sports" name="interests"
+                            value="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="music" name="interests"
+                            value="music">
+                        <label for="music">Music</label>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="message" class="msg">Message:</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Write your message"
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value>Select one</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="finland">Finland</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit
+                        Form</button>
+                </form>
+            </section>
+
+        </body>
+    </html>
