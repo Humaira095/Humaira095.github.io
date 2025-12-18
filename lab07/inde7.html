@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Grid Layout</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <div id="navbar-container">
+            <ul class="navbar">
+                <li>Home</li>
+                <li>About</li>
+                <li>Status</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+
+        <div class="introduction">
+            <h1>My Short Introduction</h1>
+            <p>It's my simple website using the basic tags of HTML and CSS.</p>
+            <a href="https://molaw.gov.pk/SiteImage/Downloads/PAK%20Army%20(Amendment)%20Act,%202023.pdf">
+                View Army Document (PDF)
+            </a>
+
+            <h2>My Interest-Based Domains</h2>
+            <ol class="interest">
+                <li>Frontend Development</li>
+                <li>Gaming Development</li>
+                <li>Websites Base Domain</li>
+                <ul id="expertise">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Interactive JavaScript</li>
+                </ul>
+                <li>Data Analysis</li>
+            </ol>
+        </div>
+
+        <section class="grid-cards">
+            <div class="card">
+                <h3>MasterMind Gaming Skills</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4iFgvj7ED13R1wsgD1h7BQ7hpyHg8lzpeZg&s" alt="Gaming skills">
+                <h4>Description:</h4>
+                <p>I explore Unity and small browser-based games for fun. Building creative gameplay mechanics sharpens my logic.</p>
+                <ul id="skills">
+                    <li>Grand Theft Auto</li>
+                    <li>Red Dead</li>
+                    <li>Fortnite</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Data Analyst Skills</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDkB8OX5223zrOWMrkmRcb-fdtByipEYWkLA&s" alt="Data Analyst">
+                <h4>Description:</h4>
+                <p>I love analyzing data using Python and spreadsheets to find meaningful patterns and present insights effectively.</p>
+                <ul class="a-skills">
+                    <li>Operations & Data Analyst</li>
+                    <li>Financial Analyst</li>
+                    <li>Data Scientist</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Frontend Developer</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKkiuIjE3VzBaN-cuh1Amqe9fi29SOro9HoA&s" alt="Frontend Developer">
+                <h4>Frontend Skills</h4>
+                <p>I design user-friendly websites using HTML, CSS, and JavaScript. I focus on responsive layouts and performance optimization.</p>
+                <ul class="F-skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>React.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </section>
+
+        <div>
+            <h3>About References</h3>
+            <p>I am learning HTML and CSS to enhance my web design skills. This course (WAD) helps us understand how websites and the WWW function.</p>
+
+            <table class="data-table">
+                <caption>Diet Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Fruit Name</th>
+                        <th>Calories per 100g</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pineapple</td><td>65</td><td>Fruit</td></tr>
+                    <tr><td>Apple</td><td>52</td><td>Fruit</td></tr>
+                    <tr><td>Banana</td><td>89</td><td>Fruit</td></tr>
+                    <tr><td>Orange</td><td>47</td><td>Fruit</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align:center;">Data sourced from nutritional databases.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+       
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact Me</h2>
+            <p>You can contact me via <a href="tel:+92563428818">telephone</a> or <a href="mailto:humai@gmail.com">email</a>.</p>
+
+            <form action="/submit" method="post" class="contact-form" aria-labelledby="form-title">
+                <h3 id="form-title">Contact Form</h3>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Interests:</legend>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message" class="msg">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">Select one</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="pakistan">Pakistan</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Task</title>
+   <link rel="stylesheet" href="form.css">
+    </style>
+</head>
+<body>
+    <h2>Contact Form with Validation</h2>
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter full name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email">
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend>Interests:</legend>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select one</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Finland">Finland</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const form = document.querySelector(".contact-form");
+
+        form.addEventListener("submit", function(e){
+            let isValid = true;
+
+            const fullName = document.getElementById("fullName");
+            const email = document.getElementById("email");
+            const message = document.getElementById("message");
+            const country = document.getElementById("country");
+            const male = document.getElementById("male");
+            const female = document.getElementById("female");
+            const sports = document.getElementById("sports");
+            const music = document.getElementById("music");
+
+            function markInvalid(el){
+                if(fullName.value.trim() === ""){
+                markInvalid(fullName); // adds the class 'invalid'
+                }else {
+                    clearInvalid(fullName); // removes the class if valid
+            }
+
+                if(el.type === "radio" || el.type === "checkbox"){
+                    document.querySelector(`label[for="${el.id}"]`).classList.add(
+                        el.type === "radio" ? "invalid-radio" : "invalid-checkbox"
+                    );
+                } else {
+                    el.classList.add("invalid");
+                }
+                isValid = false;
+            }
+
+            function clearInvalid(el){
+                if(el.type === "radio" || el.type === "checkbox"){
+                    document.querySelector(`label[for="${el.id}"]`).classList.remove(
+                        el.type === "radio" ? "invalid-radio" : "invalid-checkbox"
+                    );
+                } else {
+                    el.classList.remove("invalid");
+                }
+            }
+
+            // Validate text fields
+            fullName.value.trim() === "" ? markInvalid(fullName) : clearInvalid(fullName);
+            message.value.trim() === "" ? markInvalid(message) : clearInvalid(message);
+
+            // Validate email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            !emailPattern.test(email.value.trim()) ? markInvalid(email) : clearInvalid(email);
+
+            // Validate gender
+            if(!male.checked && !female.checked){
+                markInvalid(male);
+                markInvalid(female);
+            } else {
+                clearInvalid(male);
+                clearInvalid(female);
+            }
+
+            // Validate interests
+            if(!sports.checked && !music.checked){
+                markInvalid(sports);
+                markInvalid(music);
+            } else {
+                clearInvalid(sports);
+                clearInvalid(music);
+            }
+
+            // Validate country
+            country.value === "" ? markInvalid(country) : clearInvalid(country);
+
+            if(!isValid){
+                e.preventDefault();
+                alert("Please fill all fields correctly.");
+            }
+        });
+    </script>
+</body>
+</html>
